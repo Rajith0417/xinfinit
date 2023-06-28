@@ -3409,5 +3409,6 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important; }
 
-.register {
-  background: url("../../images/xinfinit.png"); }
+.bg {
+  background: url("../../images/xinfinit.png");
+  padding: 120px 0 124px; }
