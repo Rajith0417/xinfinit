@@ -1,0 +1,32 @@
+{
+  "name": "xinfinit",
+  "version": "1.0.0",
+  "description": "interview",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx husky install",
+    "postinstall": "npx husky set .husky",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rajith0417/xinfinit.git"
+  },
+  "author": "Rajith Gunasinghe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rajith0417/xinfinit/issues"
+  },
+  "homepage": "https://github.com/Rajith0417/xinfinit#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "husky": "^8.0.3",
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.2"
+  }
+}
