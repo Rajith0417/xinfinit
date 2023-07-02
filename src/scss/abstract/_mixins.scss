@@ -1,0 +1,29 @@
+@mixin title-one {
+    font-size: $h1-font-size;
+    font-weight: $font-weight-normal;
+    line-height: 48px;
+}
+@mixin paragraph-one {
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    line-height: 19px;
+}
+@mixin badge {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    color: color("white-1");
+    background: color("yellow-3");
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-normal;
+}
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+  }
+

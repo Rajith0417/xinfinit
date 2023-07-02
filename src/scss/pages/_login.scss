@@ -1,0 +1,19 @@
+.login {
+    .left-wrap {
+        h1 {
+            display: inline-block;
+            position: relative;
+            margin: 0 0 10px;
+            .badge {
+                @include badge;
+            }
+        }
+        p {
+            margin: 0;
+        }
+        .button-primary {
+            @include button-primary;
+            margin: 20px 0 0;
+        }
+    }
+}

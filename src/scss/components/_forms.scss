@@ -1,0 +1,46 @@
+form {
+    background-color: color("gray-1");
+    border-radius: 10px;
+    .form-row {
+        flex: 100%;
+        position: relative;
+        .form-control {
+            background-color: color("gray-2");
+            color: color("white-1");
+            font-size: $font-size-xs;
+            border: solid 1px color("gray-2");
+            @include placeholder {
+                color: color("white-1");
+            }
+        }
+        &.social-address {
+            position: relative;
+            label {
+                position: absolute;
+                margin: 0 0 0 10px;
+                color: color("white-1");
+                transform: translateY(-50%);
+                top: 50%;
+            }
+            .form-control {
+                padding-left: 30px;
+            }
+        }
+    }
+    p {
+        margin: 0;
+        font-size: $font-size-xs;
+    }
+    .button-secondary {
+        @include button-secondary;
+    }
+    .social-connect {
+        flex: 1;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        .button-social {
+            @include button-social;
+        }
+    }
+}

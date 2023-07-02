@@ -1,0 +1,33 @@
+@mixin button-common {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    height: 44px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    color: color("white-1");
+}
+@mixin button-primary {
+    @include button-common;
+    background: color("yellow-1");
+}
+@mixin button-secondary {
+    @include button-common;
+    background: color("gray-2");
+}
+@mixin button-social {
+    width: 76px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@each $key, $value in $social-colors {
+    .button-#{$key} {
+      color: $value;
+      border: solid 1px $value;                     
+    }
+  }

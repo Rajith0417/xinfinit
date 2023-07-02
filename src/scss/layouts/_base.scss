@@ -1,4 +1,13 @@
 .bg {
     background: url("../../images/xinfinit.png");
     padding: 120px 0 124px;
+    font-family: $font-family;
+    .row {
+        border-radius: 10px;
+        background-image: linear-gradient(color("gray-3") 0%, color("gray-1") 35%, transparent 100%);
+        .left-wrap {
+            padding: 0 65px;
+            align-self: center;
+        }
+    }
 }

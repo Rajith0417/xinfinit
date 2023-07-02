@@ -1,5 +1,31 @@
 .register {
-    h1 {
-        
+    .left-wrap {
+        h1 {
+            margin: 0 0 10px
+        }
+        p {
+            margin: 0;
+            ~p {
+                margin: 35px 0 0;
+            }
+        }
+        .button-primary {
+            @include button-primary;
+            margin: 20px 0 0;
+        }
+    }
+    .form-wrap {
+        padding: 20px;
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 22px 60px;
+            .social-connect {
+                p {
+                    flex: 1;
+                }
+            }
+        }
     }
 }

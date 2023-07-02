@@ -1,21 +1,28 @@
 /*colors*/
-$yellow-1: #F8A327;
-$yellow-2: #F9A21A;
-
-$white-1: #fff;
-$white-2: #FDFEFE;
-
-
-$bg-colors: (
+$colors: (
+    yellow-1: #F8A327,
+    yellow-2: #F9A21A,
+    yellow-3: #fe7b03,
+    white-1: #fff,
+    white-2: #FDFEFE,
     gray-1: #0C131D,
     gray-2: #1B2B3B,
+    gray-3: #506C89,
 );
 
 $social-colors: (
     google: #DB4437,
     facebook: #3B5999,
-    tweeter: #55ACEE,
+    twiter: #55ACEE,
     linkedin: #007bb6,
     github: #fafafa,
     microsoft: #0551a4,
 );
+
+$h1-font-size: 42px;
+$font-size-base: 1rem;//16px
+$font-size-sm: 14px;
+$font-size-xs: 12px;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;

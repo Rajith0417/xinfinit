@@ -1,0 +1,8 @@
+h1 {
+    @include title-one;
+    color: color("white-1");
+}
+p {
+    @include paragraph-one;
+    color: color("white-1");
+}
