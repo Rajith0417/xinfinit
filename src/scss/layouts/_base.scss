@@ -1,13 +1,36 @@
 .bg {
     background: url("../../images/xinfinit.png");
-    padding: 120px 0 124px;
     font-family: $font-family;
-    .row {
+    .form-layout {
         border-radius: 10px;
-        background-image: linear-gradient(color("gray-3") 0%, color("gray-1") 35%, transparent 100%);
+        background-image: linear-gradient(color("gray-1") 10.2%, color("gray-3") 100%);
         .left-wrap {
             padding: 0 65px;
             align-self: center;
+        }
+    }
+}
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        background-image: linear-gradient(color("gray-1") 10.2%, color("gray-2") 100%);
+        align-items: center;
+        p {
+            margin: 0;
+        }
+        .button-wrap {
+            display: flex;
+            gap: 10px;
+            a {
+                color: color("white-1");
+                &:hover {
+                    svg {
+                        color: color("yellow-3");
+                    }
+                }
+            }
         }
     }
 }

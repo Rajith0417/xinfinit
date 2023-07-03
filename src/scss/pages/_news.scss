@@ -1,0 +1,58 @@
+.news {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    &_img {
+        max-width: 200px;
+        height: 125px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+        width: calc(100% - 220px);
+    }
+    &_title {
+        @include title-four;
+    }
+    &_author {
+        color: color("gray-4");
+        margin: 0;
+        font-size: $font-size-sm;
+    }
+    &_description {
+        font-size: $font-size-sm;
+        margin: 0;
+    }
+    &_clearfix {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    &_icons {
+        display: flex;
+        flex-direction: column;
+        font-size: $font-size-base;
+        justify-content: space-between;
+        svg {
+            width: 20px;
+            height: 20px;
+            &:first-child {
+                color: color("yellow-5");
+            }
+            &:last-child {
+                color: color("white-1");
+            }
+        }
+    }
+    &:nth-child(odd) {
+        background: rgba(color("gray-3"), 0.3);
+    }
+    &:nth-child(even) {
+        background-color: transparent;
+    }
+}

@@ -3,6 +3,21 @@
     font-weight: $font-weight-normal;
     line-height: 48px;
 }
+@mixin title-two {
+    font-size: $h2-font-size;
+    font-weight: $font-weight-normal;
+    line-height: 1;
+}
+@mixin title-three {
+    font-size: $h3-font-size;
+    font-weight: $font-weight-normal;
+    line-height: 1;
+}
+@mixin title-four {
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+}
 @mixin paragraph-one {
     font-size: $font-size-base;
     font-weight: $font-weight-normal;
@@ -10,7 +25,7 @@
 }
 @mixin badge {
     position: absolute;
-    top: -15px;
+    top: -20px;
     right: 0;
     color: color("white-1");
     background: color("yellow-3");

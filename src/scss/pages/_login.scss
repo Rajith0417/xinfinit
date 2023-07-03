@@ -1,19 +1,84 @@
 .login {
+    padding: 120px 0 124px;
     .left-wrap {
-        h1 {
-            display: inline-block;
-            position: relative;
-            margin: 0 0 10px;
-            .badge {
-                @include badge;
+        .title-wrap {
+            display: flex;
+            gap: 10px;
+            align-items: flex-end;
+            margin: 0 0 20px;
+            img {
+                height: 48px;
+            }
+            h2 {
+                margin: 0;
+                display: inline-block;
+                position: relative;
+                .badge {
+                    @include badge;
+                }
             }
         }
         p {
             margin: 0;
+            color: color("white-2");
         }
         .button-primary {
             @include button-primary;
             margin: 20px 0 0;
+        }
+    }
+    .form-wrap {
+        padding: 20px;
+        form {
+            background-color: color("gray-1");
+            border-radius: 10px;
+            padding: 36px 60px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            h3 {
+                @include title-two;
+            }
+            .gradient-title {
+                position: relative;
+                text-align: center;
+                h4 {
+                    @include title-four;
+                    &::before,
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: calc(50% - 50px);
+                        height: 2px;
+                        position: absolute;
+                        transform: translateY(-50%);
+                        top: 50%;
+                    }
+                    &::before {
+                        left: 0;
+                        background: linear-gradient(to right, transparent, rgba(color("yellow-4"),1));
+                    }
+                    &::after {
+                        right: 0;
+                        background: linear-gradient(to left, transparent, rgba(color("yellow-4"),1));
+                    }
+                }
+            }
+            
+            .form-check {
+                a {
+                    float: right;
+                    font-size: $font-size-xs;
+                }
+            }
+            .social-connect {
+                margin: 0 -30px;
+            }
+        }
+        p {
+            font-size: $font-size-xs;
+            text-align: center;
+            margin: 0;
         }
     }
 }

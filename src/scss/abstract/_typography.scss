@@ -1,6 +1,23 @@
 h1 {
     @include title-one;
+    margin: 0;
     color: color("white-1");
+}
+h2 {
+    @include title-two;
+    margin: 0;
+    color: color("white-1");
+}
+h3 {
+    @include title-three;
+    margin: 0;
+    color: color("yellow-5");
+}
+h4 {
+    @include title-four;
+    margin: 0;
+    color: color("yellow-6");
+    font-weight: $font-weight-bold
 }
 p {
     @include paragraph-one;
