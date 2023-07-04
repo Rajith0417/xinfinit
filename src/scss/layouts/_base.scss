@@ -2,21 +2,13 @@
     background: url("../../images/xinfinit.png");
     font-family: $font-family;
     .form-layout {
-        border-radius: 10px;
-        background-image: linear-gradient(color("gray-1") 10.2%, color("gray-3") 100%);
-        .left-wrap {
-            padding: 0 65px;
-            align-self: center;
-        }
+        // border-radius: 10px;
+        // background-image: linear-gradient(rgba(color("gray-2"), 0.7), rgba(color("gray-1"), 0.2));
     }
 }
 header {
     nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 5px 10px;
         background-image: linear-gradient(color("gray-1") 10.2%, color("gray-2") 100%);
-        align-items: center;
         p {
             margin: 0;
         }
@@ -30,6 +22,19 @@ header {
                         color: color("yellow-3");
                     }
                 }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg){
+    .bg {
+        .form-layout {
+            border-radius: 10px;
+            background-image: linear-gradient(rgba(color("gray-2"), 0.7), rgba(color("gray-1"), 0.2));
+            .left-wrap {
+                padding: 0 65px;
+                align-self: center;
             }
         }
     }

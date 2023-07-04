@@ -54,7 +54,7 @@ form {
         }
     }
     &.news-form {
-        padding: 5px;
+        padding: 5px 0;
         >div {
             position: relative;
             label {
@@ -79,6 +79,7 @@ form {
                 @extend .form-control;
                 color: color("white-1");
                 width: fit-content;
+                padding-right: 15px;
                 svg {
                     color: color("yellow-5");
                     margin-bottom: 3px;

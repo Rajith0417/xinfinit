@@ -23,6 +23,13 @@ $social-colors: (
     microsoft: #0551a4,
 );
 
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1200px,
+);
+
 $h1-font-size: 42px;
 $h2-font-size: 28px;
 $h3-font-size: 24px;

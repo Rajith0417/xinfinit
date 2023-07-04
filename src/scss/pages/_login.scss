@@ -1,5 +1,5 @@
 .login {
-    padding: 120px 0 124px;
+    padding: 40px 0 0;
     .left-wrap {
         .title-wrap {
             display: flex;
@@ -28,11 +28,10 @@
         }
     }
     .form-wrap {
-        padding: 20px;
+        padding: 20px 0;
         form {
             background-color: color("gray-1");
-            border-radius: 10px;
-            padding: 36px 60px 22px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             gap: 25px;
@@ -42,8 +41,8 @@
             .gradient-title {
                 position: relative;
                 text-align: center;
-                h4 {
-                    @include title-four;
+                .section-title {
+                    font-size: $font-size-sm;
                     &::before,
                     &::after {
                         content: "";
@@ -71,14 +70,27 @@
                     font-size: $font-size-xs;
                 }
             }
-            .social-connect {
-                margin: 0 -30px;
-            }
         }
         p {
             font-size: $font-size-xs;
             text-align: center;
             margin: 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg){
+    .login {
+        padding: 120px 0 124px;
+        .form-wrap {
+            padding: 20px;
+            form {
+                border-radius: 10px;
+                padding: 36px 60px 22px;
+                .social-connect {
+                    margin: 0 -30px;
+                }
+            }
         }
     }
 }
