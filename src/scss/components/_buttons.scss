@@ -27,15 +27,15 @@
 
 @each $key, $value in $social-colors {
     .button-#{$key} {
-      color: $value;
-      border: solid 1px $value;
-      &:hover {
+    color: $value;
+    border: solid 1px $value;
+    &:hover {
         text-decoration: none;
         color: $value;
-        svg {
-            width: 20px;
-            height: 20px;
-        }
-      }              
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }              
     }
-  }
+}

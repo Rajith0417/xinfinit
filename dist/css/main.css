@@ -4590,6 +4590,7 @@ header nav {
             right: 0;
             background: linear-gradient(to left, transparent, #ab731c); }
       .login .form-wrap form .form-check a {
+        margin-top: 4px;
         float: right;
         font-size: 12px; }
     .login .form-wrap p {
